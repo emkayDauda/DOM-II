@@ -39,3 +39,16 @@ destinationImage.addEventListener('mouseup', (event) => {
     event.target.style.transform = 'none'
 })
 
+const headerImage = document.querySelector('header img')
+
+
+headerImage.addEventListener('drag', (event) => {
+    event.target.style.transition = '.3s'
+    event.target.style.transform = 'scale(0.8)'
+})
+
+
+headerImage.addEventListener('dragend', (event) => {
+    event.target.style.transform = 'none'
+})
+
