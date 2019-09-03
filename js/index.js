@@ -27,3 +27,15 @@ document.querySelectorAll('.content-section').forEach(content => {
         event.currentTarget.style.flexDirection = event.currentTarget.style.flexDirection === 'row-reverse' ? 'row' : 'row-reverse'
     })
 })
+
+const destinationImage = document.querySelector('.content-destination img')
+
+destinationImage.addEventListener('mousedown', (event) => {
+    event.target.style.transition = '.3s'
+    event.target.style.transform = 'scale(0.8)'
+})
+
+destinationImage.addEventListener('mouseup', (event) => {
+    event.target.style.transform = 'none'
+})
+
