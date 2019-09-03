@@ -52,3 +52,12 @@ headerImage.addEventListener('dragend', (event) => {
     event.target.style.transform = 'none'
 })
 
+
+let counter = 0;
+document.addEventListener('keydown', (event) => {
+    counter++;
+    if(counter >= 20) {
+        alert('Wanna release that key, maybe?')
+        counter = 0;
+    }
+})
