@@ -19,6 +19,10 @@ images.forEach(image => {
         event.target.style.transition = '0.3s';
         event.target.style.transform = event.target.style.transform === 'scale(1.2)' ? 'none' : 'scale(1.2)'
     })
+
+    image.addEventListener('dblclick', (event) => {
+        event.stopPropagation();
+    })
 })
 
 document.querySelectorAll('.content-section').forEach(content => {
