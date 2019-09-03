@@ -20,3 +20,10 @@ images.forEach(image => {
         event.target.style.transform = event.target.style.transform === 'scale(1.2)' ? 'scale(1)' : 'scale(1.2)'
     })
 })
+
+document.querySelectorAll('.content-section').forEach(content => {
+    content.addEventListener('dblclick', (event) => {
+        console.log('dblClick')
+        event.currentTarget.style.flexDirection = event.currentTarget.style.flexDirection === 'row-reverse' ? 'row' : 'row-reverse'
+    })
+})
