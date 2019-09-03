@@ -11,3 +11,12 @@ Array.from(document.getElementsByTagName('img')).forEach(element => {
         alert('NOT ALLOWEDDDD!!!!')
 })
 })
+
+const descriptions = document.querySelectorAll('.text-content')
+const images = document.querySelectorAll('.img-content');
+images.forEach(image => {
+    image.addEventListener('click', (event) => {
+        event.target.style.transition = '0.3s';
+        event.target.style.transform = event.target.style.transform === 'scale(1.2)' ? 'scale(1)' : 'scale(1.2)'
+    })
+})
