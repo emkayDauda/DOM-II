@@ -6,6 +6,7 @@ body {
 .blocks {
   margin-top: 5%;
   display: flex;
+  transition: '2s';
   flex-direction: column;
 }
 
@@ -17,20 +18,25 @@ body {
 
 .block--red {
   background-color: red;
+  transition: '2s';
 }
 
 .block--blue {
   background-color: blue;
+  transition: '2s';
 }
 
 .block--green {
   background-color: green;
+  transition: '2s';
 }
 
 .block--pink {
   background-color: pink;
+  transition: '2s';
 }
 
 .block--gray {
   background-color: gray;
+  transition: '2s';
 }

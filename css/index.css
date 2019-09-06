@@ -350,3 +350,23 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home .draggable {
+  height: 20rem;
+  width: 100%;
+}
+.home .draggable #mydiv {
+  position: absolute;
+  z-index: 9;
+  border-radius: 1rem;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+.home .draggable #mydivheader {
+  padding: 10px;
+  cursor: move;
+  border-top-right-radius: 1rem;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
